@@ -1,0 +1,441 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: transparent;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.text-red {
+    color: #FF0000;
+}
+
+.text-green {
+    color: #008000;
+}
+
+.text-blue {
+    color: #0000FF;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+/* Top News */
+.top-news {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.top-news-left {
+    width: 50%;
+}
+
+.top-news-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-news-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-news-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.top-news-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.top-news-item img:hover {
+    filter: brightness(90%);
+}
+
+.top-news-content {
+    padding: 15px;
+}
+
+.top-news-content h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.top-news-content h3 a:hover {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+.top-news-content p {
+    margin: 0;
+    color: #666;
+}
+
+/* Featured News */
+.featured-news {
+    margin: 20px;
+}
+
+.featured-article {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 20px;
+    width: 100%; /* Full width */
+    height: 40vh; /* Adjust height as needed */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-article img {
+    width: 30%; /* Adjust image width */
+    height: 100%; /* Full height of the container */
+    object-fit: cover;
+}
+
+.featured-article .article-content {
+    flex: 1;
+    padding: 15px; /* Add padding inside the article content */
+}
+
+.featured-article h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.featured-article h3 a:hover {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+.featured-article p {
+    margin: 0;
+    color: #666;
+}
+
+.featured-article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.featured-article .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.featured-article .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Latest Articles */
+.latest-articles {
+    margin: 20px;
+}
+
+.articles-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.article-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 32%; /* Adjust to fit three articles side by side */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column; /* Stack text below the image */
+    padding: 15px;
+}
+
+.article-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-content {
+    margin-top: 10px;
+}
+
+.text-content h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.text-content h3 a:hover {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+.text-content p {
+    margin: 0;
+    color: #666;
+}
+
+.text-content .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.text-content .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Politics Page Specific Styles */
+.politics-section {
+    margin: 20px;
+}
+
+.politics-section .section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.politics-articles-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.politics-article-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 32%; /* Adjust to fit three articles side by side */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.politics-article-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.politics-article-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.politics-article-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.politics-text-content {
+    margin-top: 10px;
+}
+
+.politics-text-content h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.politics-text-content h3 a:hover {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+.politics-text-content p {
+    margin: 0;
+    color: #666;
+}
+
+.politics-text-content .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.politics-text-content .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Sports Page Specific Styles */
+.sports-section {
+    margin: 20px;
+}
+
+.sports-section .section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sports-articles-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap; /* Ensure articles stay in one row */
+    overflow-x: auto; /* Add horizontal scroll if needed */
+}
+
+.sports-article-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 32%; /* Adjust to fit articles side by side */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sports-article-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sports-article-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.sports-article-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.sports-text-content {
+    margin-top: 10px;
+}
+
+.sports-text-content h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sports-text-content h3 a:hover {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+.sports-text-content p {
+    margin: 0;
+    color: #666;
+}
+
+.sports-text-content .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.sports-text-content .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Entertainment Page Specific Styles */
+.entertainment-section {
+    margin: 20px;
+}
+
+.entertainment-section .section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.entertainment-articles-grid {    
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap; 
+    }
+/* Footer Styles */
+footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color for general text */
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    margin: 0 auto;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff; /* Ensure the text color remains white */
+}
